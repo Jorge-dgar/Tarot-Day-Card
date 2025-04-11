@@ -1,0 +1,31 @@
+<div class="tarot-universe" [ngClass]="{'card-revealed': selectedCard}">
+    <h1 class="mystic-title">
+      <span class="mystic-icon">✧</span> 
+      Escoge tu carta del día, que la suerte te acompañe 
+      <span class="mystic-icon">✧</span>
+    </h1>
+    
+    <div class="cosmos-container">
+      <div *ngIf="selectedCard" class="tarot-card">
+        <div class="card-header">
+          <h2>{{ selectedCard.name }} <span class="card-number">{{ selectedCard.number }}</span></h2>
+        </div>
+        
+        <div class="card-image-container">
+          <img [src]="selectedCard.imagePath" [alt]="selectedCard.name" class="tarot-card-image" />
+          <div class="card-glow"></div>
+        </div>
+        
+        <div class="card-content">
+          <p class="meaning"><span class="label">Significado:</span> {{ selectedCard.meaning }}</p>
+          <p class="description"><span class="label">Descripción:</span> {{ selectedCard.description }}</p>
+        </div>
+      </div>
+    
+      <button class="mystic-button" (click)="drawRandomCard()">
+        <span class="button-text">Revelar mi destino</span>
+      </button>
+    </div>
+    
+    <div class="stars"></div>
+  </div>

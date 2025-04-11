@@ -1,6 +1,6 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
+import { TarotCardComponent } from './app/tarot-card/tarot-card.component';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+// Arrancar la aplicación usando bootstrapApplication
+bootstrapApplication(AppComponent).catch(err => console.error(err));
