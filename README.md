@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tarot
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Tarot-Day-Card
+This is a simple Angular web app for daily tarot readings. Click the button to reveal your random tarot card of the day and uncover its meaning. Let fate guide you!
+>>>>>>> 524140e2f48b02f608f311cddf9154ef8324d12f
